@@ -7,6 +7,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -14,10 +15,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.rodrigojscript.gu_ia.ui.components.CustomTextField
+import com.rodrigojscript.gu_ia.ui.components.CustomTextFieldN
 import com.rodrigojscript.gu_ia.ui.theme.BaseAppTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -107,7 +111,12 @@ fun MainScreen(navController: NavController) {
                                 Text(
                                     text = "valor del ticket"
                                 )
-                            })
+                            },
+                            keyboardOptions = KeyboardOptions(
+                                keyboardType = KeyboardType.Number
+                            ),
+                            singleLine = true
+                        )
                         Card(
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -130,12 +139,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre,
                                     onChange = { pre = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can,
                                     onChange = { can = it },
                                     "Cantidad"
@@ -165,12 +174,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod1 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre1,
                                     onChange = { pre1 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can1,
                                     onChange = { can1 = it },
                                     "Cantidad"
@@ -200,12 +209,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod2 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre2,
                                     onChange = { pre2 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can2,
                                     onChange = { can2 = it },
                                     "Cantidad"
@@ -235,12 +244,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod3 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre3,
                                     onChange = { pre3 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can3,
                                     onChange = { can3 = it },
                                     "Cantidad"
@@ -270,12 +279,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod4 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre4,
                                     onChange = { pre4 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can4,
                                     onChange = { can4 = it },
                                     "Cantidad"
@@ -305,12 +314,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod5 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre5,
                                     onChange = { pre5 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can5,
                                     onChange = { can5 = it },
                                     "Cantidad"
@@ -340,12 +349,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod6 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre6,
                                     onChange = { pre6 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can6,
                                     onChange = { can6 = it },
                                     "Cantidad"
@@ -375,12 +384,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod7 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre7,
                                     onChange = { pre7 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can7,
                                     onChange = { can7 = it },
                                     "Cantidad"
@@ -410,12 +419,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod8 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre8,
                                     onChange = { pre8 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can8,
                                     onChange = { can8 = it },
                                     "Cantidad"
@@ -445,12 +454,12 @@ fun MainScreen(navController: NavController) {
                                     onChange = { cod9 = it },
                                     "Codigo"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = pre9,
                                     onChange = { pre9 = it },
                                     "Precio"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = can9,
                                     onChange = { can9 = it },
                                     "Cantidad"
