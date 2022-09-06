@@ -134,7 +134,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod,
                                     onChange = { cod = it },
                                     "Codigo"
@@ -169,7 +169,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb1 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod1,
                                     onChange = { cod1 = it },
                                     "Codigo"
@@ -204,7 +204,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb2 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod2,
                                     onChange = { cod2 = it },
                                     "Codigo"
@@ -239,7 +239,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb3 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod3,
                                     onChange = { cod3 = it },
                                     "Codigo"
@@ -274,7 +274,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb4 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod4,
                                     onChange = { cod4 = it },
                                     "Codigo"
@@ -309,7 +309,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb5 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod5,
                                     onChange = { cod5 = it },
                                     "Codigo"
@@ -344,7 +344,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb6 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod6,
                                     onChange = { cod6 = it },
                                     "Codigo"
@@ -379,7 +379,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb7 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod7,
                                     onChange = { cod7 = it },
                                     "Codigo"
@@ -414,7 +414,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb8 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod8,
                                     onChange = { cod8 = it },
                                     "Codigo"
@@ -449,7 +449,7 @@ fun MainScreen(navController: NavController) {
                                     onChange = { nmb9 = it },
                                     "Nombre"
                                 )
-                                CustomTextField(
+                                CustomTextFieldN(
                                     value = cod9,
                                     onChange = { cod9 = it },
                                     "Codigo"
