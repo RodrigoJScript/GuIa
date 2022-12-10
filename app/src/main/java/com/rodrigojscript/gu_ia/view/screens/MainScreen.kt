@@ -16,9 +16,11 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.rodrigojscript.gu_ia.model.Database.GuiaEntity
 import com.rodrigojscript.gu_ia.view.components.CustomTextField
 import com.rodrigojscript.gu_ia.view.components.CustomTextFieldN
 import com.rodrigojscript.gu_ia.view.theme.BaseAppTheme
+import com.rodrigojscript.gu_ia.viewmodel.GuiaViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -27,7 +29,8 @@ var totalTodo: Double = 0.0
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun MainScreen(navController: NavController) {
+fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
+
     BaseAppTheme {
 
         val scaffoldState: ScaffoldState = rememberScaffoldState()
@@ -488,6 +491,23 @@ fun MainScreen(navController: NavController) {
                             valTicketN = isNullT(valTicket)
                             totalTod =
                                 (tot!! + tot1!! + tot2!! + tot3!! + tot4!! + tot5!! + tot6!! + tot7!! + tot8!! + tot9!! + valTicketN!!).toString()
+                            guiaViewModel.insertData(
+                                datos = GuiaEntity.Datos(
+                                    id = null,
+                                    ticket = valTicketN!!,
+                                    nota1 = tot!!,
+                                    nota2 = tot1!!,
+                                    nota3 = tot2!!,
+                                    nota4 = tot3!!,
+                                    nota5 = tot4!!,
+                                    nota6 = tot5!!,
+                                    nota7 = tot6!!,
+                                    nota8 = tot7!!,
+                                    nota9 = tot8!!,
+                                    nota10 = tot9!!,
+                                    total = totalTodo
+                                )
+                            )
                         }) {
                             Text(text = "Calcular")
                         }

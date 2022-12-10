@@ -1,4 +1,4 @@
-package com.rodrigojscript.gu_ia.model
+package com.rodrigojscript.gu_ia.model.Database
 
 import android.content.Context
 import androidx.room.Database
