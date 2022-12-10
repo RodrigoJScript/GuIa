@@ -1,4 +1,4 @@
-package com.rodrigojscript.gu_ia.ui.theme
+package com.rodrigojscript.gu_ia.view.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

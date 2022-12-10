@@ -1,4 +1,4 @@
-package com.rodrigojscript.gu_ia.ui.theme
+package com.rodrigojscript.gu_ia.view.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface

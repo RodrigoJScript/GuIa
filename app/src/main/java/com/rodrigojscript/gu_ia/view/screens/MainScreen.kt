@@ -1,8 +1,6 @@
-package com.rodrigojscript.gu_ia.ui.screens
+package com.rodrigojscript.gu_ia.view.screens
 
 import android.annotation.SuppressLint
-import android.content.Context
-import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -14,15 +12,13 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.rodrigojscript.gu_ia.ui.components.CustomTextField
-import com.rodrigojscript.gu_ia.ui.components.CustomTextFieldN
-import com.rodrigojscript.gu_ia.ui.theme.BaseAppTheme
+import com.rodrigojscript.gu_ia.view.components.CustomTextField
+import com.rodrigojscript.gu_ia.view.components.CustomTextFieldN
+import com.rodrigojscript.gu_ia.view.theme.BaseAppTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
