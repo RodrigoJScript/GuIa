@@ -16,6 +16,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.rodrigojscript.gu_ia.model.Database.GuiaEntity
 import com.rodrigojscript.gu_ia.view.components.CustomTextField
 import com.rodrigojscript.gu_ia.view.components.CustomTextFieldN
@@ -122,7 +123,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -157,7 +157,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -192,7 +191,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -227,7 +225,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -262,7 +259,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -297,7 +293,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -332,7 +327,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -367,7 +361,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -402,7 +395,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -437,7 +429,6 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                 .padding(10.dp),
                             shape = MaterialTheme.shapes.medium,
                             border = BorderStroke(2.dp, MaterialTheme.colors.primary),
-                            backgroundColor = Color.Transparent
                         ) {
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -508,8 +499,9 @@ fun MainScreen(navController: NavController, guiaViewModel: GuiaViewModel) {
                                     total = totalTodo
                                 )
                             )
+                            navController.navigate("showdata")
                         }) {
-                            Text(text = "Calcular")
+                            Text(text = "Calcular", color = Color.Black)
                         }
                     }
                 }
